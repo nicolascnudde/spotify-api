@@ -130,3 +130,5 @@ ESLint was installed and the code was validated and fixed to the airbnb coding s
 
 Git Flow was used to develop this API. The steps followed were main -> develop -> feature -> develop -> release + main.
 The hotfix branch was not used in this project.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
