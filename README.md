@@ -1,10 +1,20 @@
-# #2 — Spotify API
+## A Spotify API
 
-In this assignment, an API to manage songs and playlists was created.
+For this assignment, we created our own "Spotify" API where we can manage users, songs and playlists.
 
-## Author
+Admins can add new songs, and members can manage their playlists.
 
-This API was created by Nicolas Cnudde.
+
+
+### Built With
+
+* JavaScript
+* NodeJS
+* Jest
+* Knex (SQLite)
+* Git Flow
+
+
 
 ## Usage
 
@@ -21,7 +31,9 @@ All of endpoints being used can be found below.
 The date used when adding/creating or updating a song or playlist was set in **epoch** time (number of milliseconds since Jan 1 1970), as this contains the exact date and time.
 This can ultimately be shown as the full date and time when coding the client (front-end) side. 
 
-## Endpoints
+
+
+### Endpoints
 
 Songs:
 
@@ -75,13 +87,17 @@ Logging in can be done with sending the JSON data as: { "username": "enter usern
 
 Hashing a password can be done with sending the JSON data as: { "password": "enter password here" }
 
-** **I purposely decided not to use the UPDATE method for songs, nor the GET and DELETE method for users.**
+**I purposely decided not to use the UPDATE method for songs, nor the GET and DELETE method for users.**
 
-## Seeder
+
+
+### Seeder
 
 All of the users found inside the database were created through a seeder.
 
-## Authentication
+
+
+### Authentication
 
 The first user inside the **users** table in the **music** database has admin rights. 
 The password stored here was **ilovecats123**, before it got hashed and overwritten in the database.
@@ -91,7 +107,9 @@ Registration of a new user will also automatically be given the member role.
 
 The first **member** in the users table, with the username **Selmer77**, had their original password set as **oX2Oq0MLJ1hD4PL** before getting hashed.
 
-## Testing
+
+
+### Testing
 
 Multiple tests have been implemented, and were tested with jest and supertest:
 - To see if there is an array of at least one song inside the songs table in the database
@@ -100,11 +118,15 @@ Multiple tests have been implemented, and were tested with jest and supertest:
 
 All 3 tests were successful.
 
-## ESLint
+
+
+### ESLint
 
 ESLint was installed and the code was validated and fixed to the airbnb coding standards.
 
-## Git Flow
+
+
+### Git Flow
 
 Git Flow was used to develop this API. The steps followed were main -> develop -> feature -> develop -> release + main.
 The hotfix branch was not used in this project.
